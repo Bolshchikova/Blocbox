@@ -15,7 +15,7 @@ h2 {
 }
 p {
 	font-size: 16px;
-	line-height: 19px;
+	line-height: 21px;
 	font-weight: 300;
 }
 
@@ -27,12 +27,12 @@ p {
 	padding-right: 15px;
 	position: relative;
 }
-.container: before,
-.container: after {
+.container:before,
+.container:after {
 	content: " ";
 	display: table;
 }
-.container: after {
+.container:after {
 	clear: both;
 }
 .one-half, .one-third, .one-fourth {
@@ -101,13 +101,13 @@ header nav ul > li.btn-outline:hover {
 	background: #16634B;
 }
 header nav ul > li > a {
-	font-family: Cabin;
+	font-family: "Cabin", Helvetica, Arial, sans-serif;;
 	font-weight: bold;
 	font-size: 16px;
 	color: #16634B;
 	text-decoration: none;
 }
-header nav ul > li.btn-outline:hover:hover > a {
+header nav ul > li.btn-outline:hover > a {
 	color: #FFFFFF;
 }
 header nav ul > li > a:hover {
@@ -138,7 +138,7 @@ header .hero img {
 .btn {
 	border-radius: 4px;
 	color: #FFFFFF;
-	font-family: Cabin;
+	font-family: "Cabin", Helvetica, Arial, sans-serif;;
 	font-weight: bold;
 	font-size: 18px;
 	text-decoration: none;
@@ -146,4 +146,183 @@ header .hero img {
 	background: #D47D68;
 	border: 2px solid #D47D68;
 	box-shadow: 0px 2px 0px 0px #7C3625;
+}
+
+/* BENEFITS*/
+.benefits {
+	text-align: center;
+	display: block;
+	position: relative;
+}
+.benefits ul {
+	margin: 0 auto;
+	padding: 4em 0;
+}
+.benefits ul li {
+	list-style-type: none;
+	display: inline-block;
+}
+.benefits i {
+	font-size: 65px;
+	color: #389074;
+	margin: 0;
+	vertical-align: middle;
+}
+.benefits h2 {
+	font-size: 30px;
+	color: #389074;
+}
+
+/* Pricing */
+.pricing {
+	background: url("../images/background.png") top center no-repeat;
+	background: url("../images/background.png") top center no-repeat, linear-gradient(-168deg, rgba(21,99,74,1.00) 0%, #389074 100%);
+	background-size: cover;
+	text-align: center;
+	padding: 3em 0;
+}
+.pricing h2 {
+ 	color: #FFFFFF;
+}
+.pricing p {
+ 	line-height: 24px;
+	color: #FFFFFF;
+}
+.pricing ul {
+	margin: 0 auto;
+	padding: 2em 0;
+}
+.pricing ul li {
+ 	list-style-type: none;
+}
+.box {
+ 	padding:0 15px 15px;
+ 	background: #FFFFFF;
+ 	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+	min-height: 439px;
+	position: relative;
+	margin-top: 25px;
+ }
+.box.middle {
+ 	min-height: 485px;
+ 	margin-top: 0;
+}
+.box h3 {
+ 	font-family: "Cabin", Helvetica, Arial, sans-serif;
+ 	font-weight: bold;
+ 	text-transform: uppercase;
+	background: #D9DBDA;
+ 	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.40);
+    left: 0;
+ 	right: 0;
+ 	top: 0;
+	text-align: center;
+	margin: 0 -15px 40px;
+ 	padding: 10px 0;
+}
+.box h4 {
+	font-size: 52px;
+	font-weight: bold;
+	margin: 40px 0 10px;
+	color: #389074;
+}
+.box h4 span {
+	font-size: 32px;
+	vertical-align: top;
+}
+.box h4 span.month {
+	font-size: 24px;
+	color: #888888;
+	vertical-align: middle;
+}
+.box ul li {
+	font-family: "Cabin", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+.box .btn {
+ 	position: absolute;
+ 	bottom: 20px;
+	left: 20px;
+	right: 20px;
+}
+.small {
+	font-size: 14px;
+ 	color: #FEFEFE;
+	line-height: 17px;
+	font-style: italic;
+}
+
+/* TESTOMONIALS*/
+.testimonials {
+ 	padding: 2em 0;
+ 	text-align: center;
+}
+.testimonials h2 {
+ 	color: #389074;
+}
+.testimonials ul li {
+ 	list-style-type: none;
+}
+.testimonials blockquote {
+	font-size: 15px;
+	font-weight: 300;
+	font-style: italic;
+	color: #FFFFFF;
+	text-align: left;
+ 	background: #16634b;
+ 	position: relative;
+	padding: 25px;
+ 	width: auto;
+ 	margin: 20px 0 0 0;
+}
+.testimonials blockquote:after {
+ 	top: 100%;
+	left: 13%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-top-color: #16634b;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.testimonials img {
+	height: 65px;
+	width: 65px;
+	border-radius: 50%;
+	float: left;
+	display: inline-block;
+	margin: 20px 10px 0 0;
+}
+.testimonials p.name {
+	float: left;
+	display: inline-block;
+	text-align: left;
+	font-size: 14px;
+	margin-top: 30px;
+}
+.move {
+	margin-top: 20px;
+}
+
+/* CTA */
+.cta {
+	color: #389074;
+	background: #D9DBDA;
+	text-align: center;
+	padding: 0.5em 0 4em;
+}
+.cta h1 {
+	font-size: 40px;
+	font-weight: 400;	
+}
+.cta p {
+	font-size: 22px;
+	line-height: 29px;
+	font-weight: 300;
+	margin: 10px 0 50px;
 }
