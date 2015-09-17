@@ -139,6 +139,9 @@ header .hero img {
 	margin: 3em auto 0;
 	width: 100%;
 }
+header .site-logo img{
+	width: 50%;
+}
 
 /* BUTTON */
 .btn {
