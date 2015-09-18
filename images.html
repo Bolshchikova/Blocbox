@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/dropit.css">
 </head>
 <body class="dashboard">
 <!-- LEFT NAV -->
@@ -36,7 +37,16 @@
 	<div class="settings">
 		<img src="https://s3.amazonaws.com/uifaces/faces/twitter/taramann/128.jpg" alt="avatar">
 		<p>Olga Bolshchikova</p>
-		<a href="#"><i class="fa fa-cog"></i></a>
+				<ul class="account">
+            		<li>
+            			<a href="#"><i class="fa fa-cog"></i></a>
+              			<ul>
+	            			<li><a href="#"><i class="fa fa-cog"></i> My Account</a></li>
+                 			<li><a href="#"><i class="fa fa-users"></i> Collaborators</a></li>
+                 			<li><a href="#"><i class="fa fa-sign-out"></i> Sign Out</a></li>
+              			</ul>
+            		</li>
+          		</ul>
 	</div>
 	</nav>
 	
@@ -46,7 +56,7 @@
 		<div class="container">
 			<div class="header">
 				<h1>Images</h1>
-				<a href="#" class="btn">+Add</a>	
+				<a href="#" class="btn">+ Add</a>	
 			</div>
 		</div>
 		<div class="container">
@@ -94,5 +104,14 @@
 		</div>
 	</section>
 </main>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/dropit.js"></script>
+<script type="text/javascript">
+    $(".menu").dropit();
+    $( "#menu" ).click(function() {
+        $("#left-nav").toggleClass("open", 200);
+    });
+    $(".account").dropit();
+</script>
 </body>
 </html>
