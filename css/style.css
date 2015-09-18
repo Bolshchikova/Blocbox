@@ -139,9 +139,6 @@ header .hero img {
 	margin: 3em auto 0;
 	width: 100%;
 }
-header .site-logo img{
-	width: 50%;
-}
 
 /* BUTTON */
 .btn {
@@ -399,15 +396,77 @@ footer .logo {
 	background: #F7F7F7;
 }
 .left-nav {
-	height: 100vh;
-	width: 14.66666667%;
+	height: 100%;
+	width: 280px;
 	color: #FFFFFF;
 	background: #389074;
 	background-image: linear-gradient(-108deg, #0A6748 0%, #389074 100%);
 	float: left;
 	position: fixed;
+	position: absolute;
 	display: block;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	transform: translate(-280px,0);
+    	-webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+    	-o-transform: translate(-280px,0); /** Opera **/
+    	-moz-transform: translate(-280px,0); /** Firefox **/
+ }
+.left-nav.open {
+	display: block;
+	width: 280px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	transform: translate(0,0);
+    	-webkit-transform: translate(0,0); /** Chrome & Safari **/
+    	-o-transform: translate(0,0); /** Opera **/
+    	-moz-transform: translate(0,0); /** Firefox **/
+    	z-index: 100;
 }
+.hamburger {
+	position: absolute;
+	z-index: 1000;
+	background: #BCD8CF;
+	color: #16634B;
+	text-decoration: none;
+	font-size: 22px;
+	padding: 10px 15px;
+	border-radius: 4px;
+	left: 5px;
+	top: 15px;
+}
+
+@media (min-width:992px) {
+	.left-nav {
+		height: 100vh;
+		width: 14.66666667%;
+		color: #FFFFFF;
+		background: #389074;
+		background-image: linear-gradient(-108deg, #0A6748 0%, #389074 100%);
+		float: left;
+		position: fixed;
+		display: block;
+		transform: translate(0,0);
+    		-webkit-transform: translate(0,0); /** Chrome & Safari **/
+    		-o-transform: translate(0,0); /** Opera **/
+    		-moz-transform: translate(0,0); /** Firefox **/
+	}
+	.left-nav.open {
+    	width:14.66666667%;
+     	transform: translate(0,0);
+    		-webkit-transform: translate(0,0); /** Chrome & Safari **/
+    		-o-transform: translate(0,0); /** Opera **/
+    	-moz-transform: translate(0,0); /** Firefox **/
+   	}
+	.hamburger {
+    	display:none;
+   	}
+}
+
 .left-nav .site-logo {
 	padding: 10px 0;
 	background: #BCD8CF;
@@ -577,6 +636,23 @@ footer .logo {
 }
 
 .item-box > img {
+	position: absolute;
+	height: 100%;
+	width: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.item-box > a {
+	position: absolute;
+	height: 100%;
+	width: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 0;
+}
+.item-box > a > img {
 	position: absolute;
 	height: 100%;
 	width: auto;
