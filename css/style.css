@@ -185,7 +185,7 @@ header .hero img {
 	background: url("../images/background.png") top center no-repeat, linear-gradient(-168deg, rgba(21,99,74,1.00) 0%, #389074 100%);
 	background-size: cover;
 	text-align: center;
-	padding: 3em 0 1.5em;
+	padding: 3em 0 2em;
 }
 .pricing h2 {
  	color: #FFFFFF;
@@ -196,7 +196,7 @@ header .hero img {
 }
 .pricing ul {
 	margin: 0 auto;
-	padding: 2em 0;
+	padding-top: 2em;
 }
 .pricing ul li {
  	list-style-type: none;
@@ -254,10 +254,11 @@ header .hero img {
 	right: 20px;
 }
 .small {
-	font-size: 14px;
+	font-size: 15px;
  	color: #FEFEFE;
 	line-height: 17px;
 	font-style: italic;
+	margin-top: 0;
 }
 
 /* TESTOMONIALS*/
@@ -543,7 +544,6 @@ footer .logo {
 	color: #FFFFFF;
 	text-decoration: none;
 	text-align: right;
-	
 	margin-right: 10px;
 	margin-top: 8px;
 }
